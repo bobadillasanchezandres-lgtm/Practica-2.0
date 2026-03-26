@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page - Productivity</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background: #000000;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgb(0, 0, 0);
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu li {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* HERO SECTION */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 255, 255);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <nav>
+    <div class="logo">PRODUCTIVITY</div>
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Schedules</li>
+      <li>Webinar</li>
+      <li>FAQ</li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>productivity</h1>
+      <p>
+        Gear up to work. Organiza tu tiempo y mejora tu enfoque con herramientas
+        diseñadas para maximizar tu rendimiento diario.
+      </p>
+      <button>READ MORE</button>
+    </div>
+
+    <div class="hero-img">
+      <img src="https://pub-f0e7c8e6111540268d88312c9b957ac4.r2.dev/img/joji-mobile-block-2.png" alt="Persona trabajando">
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
